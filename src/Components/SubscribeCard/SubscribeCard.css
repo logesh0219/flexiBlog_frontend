@@ -82,9 +82,13 @@ h2.subscribe-card-heading{
     background-color: transparent;
     font-family: 'Inter', sans-serif;
     border: none;
-    background-color: var(--theme-ui-colors-omegaLight, #e2e8f0);
-    color: var(--theme-ui-colors-omegaDark, #718096);
+    background-color: var(--search-bar-bg-color, #e2e8f0);
+    color: var(--search-bar-text-color, #718096);
     outline: none;
+}
+
+.email-input::placeholder{
+    color: var(--search-bar-text-color);
 }
 
 .subscribe-input{
