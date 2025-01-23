@@ -98,12 +98,11 @@ h2.subscribe-card-heading{
     margin-bottom: 1rem;
 }
 
-.email-input{
-    font-size: 0.825rem;
-}
-
 @media screen and (max-width: 920px) {
     .subscribe-input{
         display: block;
+    }
+    .email-input{
+        font-size: 0.825rem;
     }
 }
