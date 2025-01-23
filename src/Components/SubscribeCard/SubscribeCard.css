@@ -1,0 +1,97 @@
+.subscribe-card{
+    background-color: var(--secondary-bg-color);
+    padding: 2rem;
+    border-radius: 1rem;
+    position: relative;
+    box-shadow: 1px 1px 5px 0 rgba(1, 1, 1, .05);
+}
+
+.subscribe-card-wrapper{
+    box-sizing: border-box;
+    margin: 0;
+    min-width: 0;
+    max-width: 500px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+h2.subscribe-card-heading{
+    box-sizing: border-box;
+    margin: 0;
+    min-width: 0;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    line-height: 1.33;
+    display: block;
+    color: var(--theme-ui-colors-heading, #2d3748);
+    font-weight: bold;
+    -webkit-text-decoration: none;
+    text-decoration: none;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.subscribe-card-para{
+    box-sizing: border-box;
+    margin: 0;
+    min-width: 0;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    line-height: inherit;
+}
+
+.mailing-data-form{
+    box-sizing: border-box;
+    margin: 0;
+    min-width: 0;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+}
+
+.mailing-form{
+    box-sizing: border-box;
+    margin: 0;
+    min-width: 0;
+    display: block;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.email-input{
+    box-sizing: border-box;
+    margin: 0;
+    min-width: 0;
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-size: inherit;
+    line-height: inherit;
+    border: 1px solid;
+    border-radius: 4px;
+    color: inherit;
+    background-color: transparent;
+    font-family: 'Inter', sans-serif;
+    border: none;
+    background-color: var(--card-btn-hover-text-color);
+    outline: none;
+}
+
+.subscribe-input{
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 920px) {
+    .subscribe-input{
+        display: block;
+    }
+}

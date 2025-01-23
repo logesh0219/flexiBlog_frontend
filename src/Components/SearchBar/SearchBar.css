@@ -1,0 +1,72 @@
+.search-bar {
+    box-sizing: border-box;
+    margin: 0;
+    min-width: 0;
+    -webkit-flex-basis: auto;
+    -ms-flex-preferred-size: auto;
+    flex-basis: auto;
+    min-width: auto;
+    margin-left: 1rem;
+    margin-right: 4.25rem;
+    width: 330px;
+}
+
+.search-bar-container {
+    box-sizing: border-box;
+    margin: 0;
+    min-width: 0;
+    display: none;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    position: static;
+    top: 2rem;
+    left: 50%;
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+    z-index: 99;
+    width: auto;
+    max-width: none;
+    border-style: solid;
+    border-width: 3px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: var(--search-bar-bg-color);
+    border: 3px solid var(--secondary-bg-color);
+}
+
+.search-bar input::placeholder {
+    color: var(--search-bar-text-color);
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+}
+
+.search-icon {
+    font-size: 24px;
+    color: var(--search-bar-text-color);
+    -webkit-font-smoothing: antialiased;
+
+}
+
+@media (min-width: 768px) {
+    .search-bar {
+        -webkit-flex-basis: 33.333333%;
+        -ms-flex-preferred-size: 33.333333%;
+        flex-basis: 33.333333%;
+    }
+    .search-bar-container {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .search-bar {
+        display: none;
+    }
+}

@@ -1,0 +1,374 @@
+.view-more-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.view-more-cards-count {
+  box-sizing: border-box;
+  margin: 0px;
+  min-width: 0px;
+  white-space: nowrap;
+  display: inline-block;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: 600;
+  vertical-align: middle;
+  padding: 0.25rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 250ms;
+  background-color: var(--secondary-bg-color, #fff);
+  color: var(--primary-btn-bg-color, #667eea);
+  font-size: 1.5rem;
+}
+
+.view-more-cards-count:hover {
+  background-color: var(--primary-btn-bg-color, #fff);
+  color: var(--secondary-bg-color, #667eea);
+  transition: 0.3s all ease-in;
+}
+
+.view-btn-para {
+  margin-top: 0;
+}
+
+.view-data-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 3fr));
+  margin-left: -0.5rem;
+  padding: 0.5rem;
+}
+
+.card-data-wrapper-container {
+  max-width: none;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  padding: 0.5rem;
+}
+
+.view-card-data-details:hover {
+  -webkit-transition: -webkit-transform 250ms ease, box-shadow 250ms ease,
+    color 250ms ease;
+  -webkit-transition: transform 250ms ease, box-shadow 250ms ease,
+    color 250ms ease;
+  transition: transform 250ms ease, box-shadow 250ms ease, color 250ms ease;
+  box-shadow: 0px 9px 10px 0px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+  transition: 0.3s all ease-in;
+}
+
+.view-card-data-details {
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  background-color: var(--secondary-bg-color);
+  border-radius: 1rem;
+  -webkit-transition: -webkit-transform 250ms ease, box-shadow 250ms ease,
+    color 250ms ease;
+  -webkit-transition: transform 250ms ease, box-shadow 250ms ease,
+    color 250ms ease;
+  transition: transform 250ms ease, box-shadow 250ms ease, color 250ms ease;
+  box-shadow: 1px 1px 5px 0 rgba(1, 1, 1, 0.05);
+  overflow: hidden;
+  height: 100%;
+}
+
+.view-card-data {
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  height: 100%;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card-data-img {
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-flex-basis: 33.333333%;
+  -ms-flex-preferred-size: 33.333333%;
+  flex-basis: 33.333333%;
+  margin: 0.5rem;
+  margin-right: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-align: center;
+  position: relative;
+  display: block;
+}
+
+.card-data-content {
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 1rem;
+}
+
+.left-side-card-img {
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  height: 100%;
+  border-radius: 0.5rem;
+  min-height: 8.3rem;
+}
+
+.left-side-card-wrapper {
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  font-weight: 600;
+  height: 100%;
+  z-index: 2;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  line-height: 1.33;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+}
+
+.card-data-bg-img {
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../../Assets/Images/download.png);
+  background-size: 11rem;
+  position: absolute;
+  opacity: 0.07;
+  top: 0;
+  left: 0;
+  border-radius: 0.5rem;
+}
+
+.card-data-btn {
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  display: inline-block;
+  width: max-content;
+  margin-bottom: 1rem;
+}
+
+.card-data-title-btn {
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  display: inline-block;
+  vertical-align: baseline;
+  font-size: 0.75rem;
+  font-weight: 700;
+  white-space: nowrap;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  border-radius: 2px;
+  background-color: primary;
+  display: inline-block;
+  border-radius: 0.5rem;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: 600;
+  vertical-align: middle;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  -webkit-transition: all 250ms ease;
+  transition: all 250ms ease;
+}
+
+.card-data-title-btn:hover {
+  background-color: var(--card-btn-text-color) !important;
+  color: var(--card-btn-hover-text-color) !important;
+}
+
+.card-heading-title {
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  font-family: 'Inter', sans-serif;
+  font-weight: bold;
+  line-height: 1.33;
+  display: block;
+  font-weight: bold;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  margin-bottom: 1rem;
+  display: block;
+  font-weight: bold;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-size: 1.25rem;
+  color: var(--heading-color);
+  cursor: pointer;
+}
+
+.card-item-profile-data {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.card-profile-name {
+  font-size: 0.875rem;
+  color: var(--heading-color);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.card-profile-name:hover {
+  color: var(--primary-btn-bg-color);
+}
+
+.card-profile-date {
+  font-size: 0.875rem;
+  color: #99adc5;
+  font-weight: 400;
+}
+
+.view-card--profile-name {
+  color: var(--card-btn-text-color);
+}
+
+.view-data-content {
+  padding: 2rem;
+}
+
+.pagination-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  padding: 0.25rem;
+  border-radius: 9999px;
+  background-color: var(--secondary-bg-color);
+}
+
+.page-btn{
+    box-sizing: border-box;
+    margin: 0px;
+    min-width: 0px;
+    width: 33.3333%;
+}
+
+.page-btn-text{
+    box-sizing: border-box;
+    margin: 0px;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    align-items: center;
+    display: inline-flex;
+    justify-content: space-evenly;
+    outline: 0px;
+    border-radius: 9999px;
+    cursor: pointer;
+    border-width: 3px;
+    border-style: solid;
+    transition: 250ms;
+    background-color: var(--card-btn-text-color, #718096);
+    border-color: var(--card-btn-text-color, #718096);
+    min-width: 100%;
+    color: var(--card-btn-hover-text-color);
+}
+
+.prev-page-disabled{
+    visibility: hidden;
+}
+
+.next-page-disabled{
+    visibility: hidden;
+}
+
+.page-btn-text:hover{
+    background-color: var( --primary-btn-bg-color);
+    border-color: var(--primary-btn-bg-color);
+    color: var(--card-btn-hover-text-color);
+}
+
+.page-number-text{
+    box-sizing: border-box;
+    margin: 0;
+    min-width: 0;
+    width: 33.333333%;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    color: var(--card-btn-text-color);
+}
+
+.page-number{
+    color: var(--card-btn-text-color);
+}
+
+@media screen and (min-width: 640px) {
+  .left-side-card-img {
+    border-radius: 0.5rem;
+    min-height: 8.3rem;
+  }
+  .pagination-controls {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .page-btn-text{
+    padding: 7px 14px;
+    font-size: 13px;
+  }
+  .page-number-text{
+    font-size: 14px
+  }
+}

@@ -1,0 +1,53 @@
+.contact-container {
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  display: block;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.input-wrapper {
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  -webkit-flex: auto;
+  -ms-flex: auto;
+  flex: auto;
+  margin-bottom: 1rem;
+}
+
+.input-wrapper label {
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 0.5rem;
+  color: var(--card-btn-text-color);
+}
+
+.input-wrapper + div {
+    margin-left: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .input-wrapper + div {
+    margin-left: 1rem;
+  }
+  .input-wrapper {
+    margin-bottom: 0;
+  }
+}
+
