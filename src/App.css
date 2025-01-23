@@ -428,23 +428,6 @@ h2 {
   }
 }
 
-@media screen and (max-width: 640px) {
-  .card-data-container {
-    display: block;
-    margin-left: -0.5rem;
-  }
-  .view-more-btn.card-btn {
-    display: none;
-  }
-  .card-heading-title {
-    font-size: 18px;
-    margin-bottom: 13px;
-  }
-  .card-data-content {
-    margin: 0px;
-    padding: 13px;
-  }
-}
 
 @media screen and (max-width: 640px) {
   .divider {
@@ -513,29 +496,6 @@ h2 {
   }
 }
 
-@media screen and (min-width: 640px) {
-  .css-1xnqcs {
-    -webkit-flex-basis: 50%;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .css-1xnqcs {
-    -webkit-flex-basis: 50%;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .css-1xnqcs {
-    -webkit-flex-basis: 50%;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
-  }
-}
 @media screen and (min-width: 640px) {
   .card-heading-title {
       display: block;

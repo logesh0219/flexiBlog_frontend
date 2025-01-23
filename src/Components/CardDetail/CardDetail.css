@@ -226,7 +226,7 @@
 }
 
 .card-profile-name {
-  font-size: 0.875rem;
+  font-size: 14px !important;
   color: var(--heading-color);
   font-weight: bold;
   cursor: pointer;
@@ -240,4 +240,49 @@
   font-size: 0.875rem;
   color: #99adc5;
   font-weight: 400;
+}
+
+@media screen and (max-width: 640px) {
+  .card-data-container {
+    display: block;
+    margin-left: -0.5rem;
+  }
+  .view-more-btn.card-btn {
+    display: none;
+  }
+  .card-heading-title {
+    font-size: 18px !important;
+    margin-bottom: 13px;
+  }
+  .card-data-content {
+    margin: 0px;
+    padding: 13px;
+  }
+}
+
+
+@media screen and (min-width: 640px) {
+  .card-heading-title {
+    display: block;
+    color: var(--theme-ui-colors-heading, #2d3748);
+    font-weight: bold;
+    text-decoration: none;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    flex: 0 1 0%;
+  }
+  .card-profile-name {
+    font-size: 1rem !important;
+    color: var(--heading-color);
+    font-weight: bold;
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  @media screen and (min-width: 768px) {
+    .card-heading-title {
+      flex: 1 1 auto;
+    }
+  }
 }
