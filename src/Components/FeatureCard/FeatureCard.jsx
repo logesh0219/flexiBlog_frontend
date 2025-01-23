@@ -5,7 +5,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
 const PrevArrow = (props) => {
-  const { className, style, onClick } = props;
+  const { style, onClick } = props;
   return (
     <button
       data-role="none"
@@ -21,7 +21,7 @@ const PrevArrow = (props) => {
 };
 
 const NextArrow = (props) => {
-  const { className, style, onClick } = props;
+  const { style, onClick } = props;
   return (
     <button
       data-role="none"

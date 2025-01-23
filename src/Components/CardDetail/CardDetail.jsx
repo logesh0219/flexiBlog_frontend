@@ -29,7 +29,7 @@ const CardDetail = ({CardData}) => {
               <div className="card-data-content">
                 <div className="card-data-btn">
                   <a
-                    href="#"
+                    href="javascript:void(0)"
                     className="card-data-title-btn"
                     style={{
                       backgroundColor: CardData.background,
