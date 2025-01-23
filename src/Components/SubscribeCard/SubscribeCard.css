@@ -82,12 +82,24 @@ h2.subscribe-card-heading{
     background-color: transparent;
     font-family: 'Inter', sans-serif;
     border: none;
-    background-color: var(--card-btn-hover-text-color);
+    background-color: var(--theme-ui-colors-omegaLight, #e2e8f0);
+    color: var(--theme-ui-colors-omegaDark, #718096);
     outline: none;
 }
 
 .subscribe-input{
+    box-sizing: border-box;
+    margin: 0;
+    min-width: 0;
+    display: block;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     margin-bottom: 1rem;
+}
+
+.email-input{
+    font-size: 0.825rem;
 }
 
 @media screen and (max-width: 920px) {
