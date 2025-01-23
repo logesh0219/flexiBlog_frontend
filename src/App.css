@@ -67,6 +67,11 @@ i {
   align-items: center;
 }
 
+button{
+  cursor: pointer !important;
+  all: unset;
+}
+
 .container {
   box-sizing: border-box;
   margin: 0;
