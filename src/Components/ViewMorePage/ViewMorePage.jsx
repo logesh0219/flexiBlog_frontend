@@ -79,8 +79,7 @@ const ViewMorePage = ({ CardData }) => {
                   </div>
                   <div className="card-data-content view-data-content">
                     <div className="card-data-btn">
-                      <a
-                        href="javascript:void(0)"
+                      <button
                         className="card-data-title-btn"
                         style={{
                           backgroundColor: categoryData.background,
@@ -88,7 +87,7 @@ const ViewMorePage = ({ CardData }) => {
                         }}
                       >
                         {categoryData.category}
-                      </a>
+                      </button>
                     </div>
                     <h2 className="card-heading-title">{item.title}</h2>
                     <div className="field-details para tutor-field-para view-btn-para">

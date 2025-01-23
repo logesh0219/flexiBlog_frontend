@@ -28,8 +28,7 @@ const CardDetail = ({CardData}) => {
               </div>
               <div className="card-data-content">
                 <div className="card-data-btn">
-                  <a
-                    href="javascript:void(0)"
+                  <button
                     className="card-data-title-btn"
                     style={{
                       backgroundColor: CardData.background,
@@ -37,7 +36,7 @@ const CardDetail = ({CardData}) => {
                     }}
                   >
                     {CardData.category}
-                  </a>
+                  </button>
                 </div>
                 <h2 className="card-heading-title">{item.title}</h2>
                 <div className="card-item-profile-data">
