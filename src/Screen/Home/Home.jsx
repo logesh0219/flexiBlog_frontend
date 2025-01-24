@@ -9,6 +9,10 @@ import JavaScriptCard from '../../Components/JavaScriptCard/JavaScriptCard';
 import ReactCard from '../../Components/ReactCard/ReactCard';
 import CardData from '../../Assets/Data/CardData';
 import SubscribeCard from '../../Components/SubscribeCard/SubscribeCard';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
+
 
 const Home = () => {
 
@@ -18,7 +22,7 @@ const Home = () => {
   const ReactData = CardData.find((category) => category.category === 'React');
 
   return (
-    <div className="">
+    <div className="" data-aos="fade-up"  data-aos-duration="750" data-aos-once="true">
       <div className="home">
         <div className='divider'> </div>
         <Banner />

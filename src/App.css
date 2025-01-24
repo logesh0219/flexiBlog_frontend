@@ -55,6 +55,15 @@ body {
   --link-text-color: #667eea;
 }
 
+[data-aos="fade-up"],[data-aos="fade-down"] {
+  opacity: 0;
+  transition-property: transform, opacity;
+
+  &.aos-animate {
+    opacity: 1;
+  }
+}
+
 .d-flex {
   display: flex;
 }
@@ -233,8 +242,8 @@ textarea {
 }
 
 .para {
-  font-size: 20px;
-  font-weight: 400;
+  font-size: 1.25rem;
+  font-weight: normal;
   color: var(--sub-heading-color);
   margin-bottom: 1rem;
 }
@@ -251,7 +260,6 @@ textarea {
   border-radius: 25px;
   text-align: center;
   border: 3px solid transparent;
-  font-weight: 400;
   transition: 0.3s all ease;
   cursor: pointer;
 }
@@ -462,13 +470,13 @@ h2 {
 
 @media screen and (min-width: 640px) and (max-width: 998px) {
   .para {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
 }
 
 @media screen and (min-width: 498px) and (max-width: 640px) {
   .para {
-    font-size: 16px;
+    font-size: 1rem;
     width: 100%;
   }
 

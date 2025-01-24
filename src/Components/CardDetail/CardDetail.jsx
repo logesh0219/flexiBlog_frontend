@@ -1,12 +1,9 @@
 import React from 'react';
 import './CardDetail.css';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-AOS.init();
 
 const CardDetail = ({CardData}) => {
   return (
-    <div className="card-data-container" data-aos="fade-up">
+    <div className="card-data-container" >
       {CardData.data.slice(0, 4).map((item, index) => (
         <div key={index} className="card-data-wrapper-container">
           <div className="card-data-details">

@@ -8,11 +8,11 @@ AOS.init();
 
 const Contact = () => {
   return (
-    <div className="contact">
+    <div className="contact" data-aos="fade-up"  data-aos-duration="750" data-aos-once="true">
       <div className="divider"></div>
       <div className="container">
         <div className="contact-page">
-          <div className="contact-left-side" data-aos="fade-right">
+          <div className="contact-left-side">
             <div className="contact-wrapper">
               <h2 className="heading1 contact-heading">Let's Connect</h2>
               <div className="para contact-para">
@@ -25,7 +25,7 @@ const Contact = () => {
               <ContactForm />
             </div>
           </div>
-          <div className="contact-right-side" data-aos="fade-left">
+          <div className="contact-right-side">
             <div className="card-heading2">
               <h2 className="heading2">Our Commitment</h2>
             </div>

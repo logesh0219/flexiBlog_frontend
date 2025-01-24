@@ -1,12 +1,9 @@
 import React from 'react';
-import './SubscribeCard.css'
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-AOS.init();
+import './SubscribeCard.css';
 
 const SubscribeCard = () => {
     return (
-        <div className='container' data-aos="zoom-in">
+        <div className='container'>
             <div className="subscribe-card">
                 <div className="subscribe-card-wrapper">
                     <h2 className="subscribe-card-heading">Subscribe to our newsletter!</h2>

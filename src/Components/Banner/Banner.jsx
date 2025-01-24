@@ -1,19 +1,15 @@
 import React from 'react';
 import './Banner.css';
 import { Link } from 'react-router-dom';
-import AOS from 'aos';
-import 'aos/dist/aos.css'; // You can also use <link> for styles
-// ..
-AOS.init();
 const Banner = () => {
 
   return (
-    <div className="container" data-aos="zoom-in-up">
-      <div className="banner d-flex">
+    <div className="container">
+      <div className="banner">
         <div className="banner-details">
-          <h2 className="heading1 banner-heading">
+          <h1 className="heading1 banner-heading">
             Learn React in <span>30 days</span> with great instructors!
-          </h2>
+          </h1>
           <div className="para banner-para">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.
           </div>
@@ -24,6 +20,7 @@ const Banner = () => {
         </div>
         <div className="profile-details">
         </div>
+        <div className="banner-bg-drawing"></div>
         <div className="course-details">
           <div className="banner-svg marginX1rem">
             <svg
