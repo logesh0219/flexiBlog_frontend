@@ -95,8 +95,11 @@
 .slick-next,
 .slick-prev {
   position: absolute;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-50%,-50%) !important;
   z-index: 2;
 }
 
