@@ -314,14 +314,14 @@ h2.tutor-name {
 }
 
 .tutor-skill-details{
-    box-sizing: border-box;
-    margin: 1rem 0px 0px;
+    box-sizing: border-box; 
     min-width: 0px;
     flex-basis: 50%;
     -webkit-box-flex: 1;
     flex-grow: 1;
     padding-left: 0px;
     padding-right: 0px;
+    text-align: start;
 }
 
 h2.tutor-skill-title{
@@ -333,8 +333,15 @@ h2.tutor-skill-title{
     display: block;
     font-weight: 600;
     text-decoration: none;
+    text-align: left;
     font-size: 1rem;
     color: var(--card-btn-text-color, #718096);
+}
+
+.social-label{
+    display: flex;
+    align-items: center;
+    justify-content: start;
 }
 
 .tutor-skills{
@@ -343,6 +350,7 @@ h2.tutor-skill-title{
     display: flex;
     align-items: center;
     gap: 5px;
+    text-align: center;
 }
 
 .tutor-skills svg{
@@ -410,14 +418,12 @@ h2.tutor-skill-title{
         padding-left: 1rem;
         padding-right: 1rem;
         margin-top: 0px;
-        margin-left: 0.5rem;
         width: 100%;
+        text-align: center;
     }
     .tutor-skills{
         font-size: 1rem;
         color: var(--card-btn-text-color) ;
-        display: flex;
-        align-items: center;
         gap: 5px;
     }
 }

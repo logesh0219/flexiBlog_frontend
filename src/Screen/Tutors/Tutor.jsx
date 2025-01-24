@@ -10,11 +10,21 @@ const Tutor = () => {
   return (
     <div className="tutor">
       <div className="divider"></div>
-      <div className="container" data-aos="fade-down"  data-aos-duration="750" data-aos-once="true">
+      <div
+        className="container"
+        data-aos="fade-down"
+        data-aos-duration="750"
+        data-aos-once="true"
+      >
         <h1 className="heading1 tutor-heading">{TutorsData.heading}</h1>
         <div className="para">{TutorsData.subheading}</div>
       </div>
-      <div className="container" data-aos="fade-up"  data-aos-duration="750" data-aos-once="true" >
+      <div
+        className="container"
+        data-aos="fade-up"
+        data-aos-duration="750"
+        data-aos-once="true"
+      >
         {TutorsData.members.map((item, index) => (
           <div key={index}>
             <div className="divider"></div>
@@ -75,7 +85,7 @@ const Tutor = () => {
                           <h2 className="tutor-skill-title">Social Media</h2>
                           {TutorsData.links.map((item) => (
                             <div className="tutor-skills ">
-                              {item.svgIcon} <div>{item.label}</div>
+                              {item.svgIcon} <div className='social-label'><span>{item.label}</span></div>
                             </div>
                           ))}
                         </div>
