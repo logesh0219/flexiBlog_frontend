@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './ViewMorePage.css';
 import { Link, useParams } from 'react-router-dom';
 
@@ -6,6 +6,10 @@ const ViewMorePage = ({ CardData }) => {
   const { categoryName } = useParams();
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 6;
+
+  useEffect(()=>{
+    window.scrollTo({top: "100px"});
+},[currentPage])
 
   const categoryData = CardData.find(
     (item) => item.category.toLowerCase() === categoryName.toLowerCase()
@@ -37,7 +41,7 @@ const ViewMorePage = ({ CardData }) => {
         <div className="view-more-head">
           <div className="view-more-head-wrapper">
             <h1 className="heading3 view-more-title">
-              {categoryData.category}{' '}
+              {categoryData.category}
               <div className="view-more-cards-count">
                 {categoryData.data.length}
               </div>
@@ -60,7 +64,7 @@ const ViewMorePage = ({ CardData }) => {
             >
               <div className="card-data-details view-card-data-details">
                 <div className="card-data view-card-data">
-                  <div className="card-data-img">
+                  <div className="card-data-img view-data-img">
                     <div
                       className="left-side-card-img"
                       style={{
@@ -97,16 +101,9 @@ const ViewMorePage = ({ CardData }) => {
                       <div className="future-card-img">
                         <div
                           className="feature-card-img-wrapper"
-                          style={{ width: '64px', height: '48px' }}
+                          style={{ width: '58px', height: '48px' }}
                         >
-                          <img
-                            src={item.profileImage}
-                            alt={item.name}
-                            style={{
-                              transition: 'opacity 500ms linear',
-                              objectFit: 'contain',
-                            }}
-                          />
+                          <img src={item.profileImage} alt={item.name} />
                         </div>
                       </div>
                       <div className="card-profile-data">

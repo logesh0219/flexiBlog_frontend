@@ -26,7 +26,7 @@ h2.subscribe-card-heading{
     font-weight: bold;
     line-height: 1.33;
     display: block;
-    color: var(--theme-ui-colors-heading, #2d3748);
+    color: var(--card-heading-style);
     font-weight: bold;
     -webkit-text-decoration: none;
     text-decoration: none;

@@ -117,15 +117,11 @@ const FeatureCard = () => {
                     <div className="future-card-img">
                       <div
                         className="feature-card-img-wrapper"
-                        style={{ width: '64px', height: '48px' }}
+                        style={{ width: '58px', height: '48px' }}
                       >
                         <img
                           src={item.profileImg}
                           alt={item.name}
-                          style={{
-                            transition: 'opacity 500ms linear',
-                            objectFit: 'contain',
-                          }}
                         />
                       </div>
                     </div>

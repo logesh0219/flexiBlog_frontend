@@ -217,12 +217,20 @@ h2.tutor-name {
     font-weight: bold;
     line-height: 1.33;
     display: block;
-    color: var(--heading-color, #2d3748);
+    color: var(--primary-btn-bg-color) !important;
     font-weight: bold;
     -webkit-text-decoration: none;
     text-decoration: none;
     margin-bottom: 1rem;
     font-size: 1.25rem;
+}
+
+.tutor-name a{
+    color: var(--primary-btn-bg-color) !important;
+}
+
+.tutor-name a:hover{
+    color: var(--course-text-color-second) !important;
 }
 
 .tutor-profile-details {
