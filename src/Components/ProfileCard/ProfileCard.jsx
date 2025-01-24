@@ -1,13 +1,10 @@
 import React from 'react';
 import './ProfileCard.css'
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-AOS.init();
 
 const ProfileCard = () => {
   return (
 
-    <div className="container" data-aos="zoom-in">
+    <div className="container">
       <div className="profile-card">
         <div className="profile-card-container">
           <div className="profile-card-wrapper">
