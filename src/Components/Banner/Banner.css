@@ -3,7 +3,6 @@
   box-sizing: border-box;
   margin: 0;
   min-width: 0;
-  background-color: var(--theme-ui-colors-contentBg, #fff);
   border-radius: 1rem;
   -webkit-transition: -webkit-transform 250ms ease, box-shadow 250ms ease,
     color 250ms ease;
